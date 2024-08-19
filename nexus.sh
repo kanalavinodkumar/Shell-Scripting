@@ -28,6 +28,7 @@ validate (){
 
 apt-get update -y &>>$LOGFILE
 validate $? "apt-get update"
+echo $LOGFILE
 
 
 # Install necessary dependencies
