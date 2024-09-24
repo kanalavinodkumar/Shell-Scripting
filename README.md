@@ -252,6 +252,16 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
 
 
      ```
+### 26. **`rev`**
+   - Example:
+    ```bash
+      
+    vinod@jenkins-20240819-033351:~$ pwd
+    /home/vinod
+      
+    pwd | rev | cut -d "/" -f 1 | rev
+    vinod
+    ```
 ### Summary of Special Variables
 
 | Variable  | Meaning                                                    |
@@ -274,14 +284,3 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
 
 grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" logfile | sort | uniq -c | sort -nr
 These commands form the foundation of shell scripting and can be combined in various ways to automate complex tasks.
-
-### The command you've provided is used to extract the name of the current working directory from its full path. 
-      
-   ```bash
-      
-   vinod@jenkins-20240819-033351:~$ pwd
-   /home/vinod
-      
-   pwd | rev | cut -d "/" -f 1 | rev
-   vinod
-   ```
