@@ -84,6 +84,13 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
      ```bash
      awk '{print $1}' filename  # Prints the first column of each line
      ```
+   - Example:
+     ```bash
+     echo $(date) | awk -F " " '{print $2,$3}'
+
+     output:
+     sep tue
+     ```
 
 ### 8. **`sed`**
    - A stream editor used for text substitution, filtering, and transformations.
@@ -119,6 +126,13 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
    - Example:
      ```bash
      cut -d':' -f1 /etc/passwd  # Extracts the first field from each line, using ':' as a delimiter
+     ```
+   - Example:
+     ```bash
+     echo $(date) | cut -d " " -f1,2  # Extracts the first field from each line, using ':' as a delimiter
+
+     output:
+     tue sep
      ```
 
 ### 10. **`sort`**
