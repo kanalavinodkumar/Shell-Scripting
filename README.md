@@ -91,22 +91,26 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
      ```bash
      sed 's/oldtext/newtext/g' filename
      ```
-    - Delete a specific line (e.g., line 3)
-      ```bash
-      sed '3d' file.txt
-      ```
-    - Insert a line of text before a specified line (e.g., before line 2).
-      ```bash
+   - Delete a specific line (e.g., line 3)
+   - Example:
+     ```bash
+     sed '3d' file.txt
+     ```
+   - Insert a line of text before a specified line (e.g., before line 2).
+   - Example:
+     ```bash
       sed '2i\This is a new line' file.txt
       ```
-    - Perform a substitution only on lines that match a certain pattern.
-      ```bash
+   - Perform a substitution only on lines that match a certain pattern.
+   - Example:
+     ```bash
       sed '/pattern/s/old_text/new_text/' file.txt
-      ```
-    - Remove all empty lines from a file.
-      ```bash
+     ```
+   - Remove all empty lines from a file.
+   - Example:
+     ```bash
       sed '/^$/d' file.txt
-      ```
+     ```
 
     
 
