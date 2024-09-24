@@ -253,7 +253,6 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
 
      ```
 ### Summary of Special Variables
-# Special Shell Script Variables
 
 | Variable  | Meaning                                                    |
 |-----------|------------------------------------------------------------|
