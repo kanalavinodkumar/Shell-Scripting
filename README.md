@@ -129,7 +129,7 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
      ```
    - Example:
      ```bash
-     echo $(date) | cut -d " " -f1,2  # Extracts the first field from each line, using ':' as a delimiter
+     echo $(date) | cut -d " " -f1,2
 
      output:
      tue sep
