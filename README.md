@@ -254,14 +254,14 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
      ```
 ### 26. **`rev`**
    - Example:
-    ```bash
+     ```bash
       
-    vinod@jenkins-20240819-033351:~$ pwd
-    /home/vinod
+     vinod@jenkins-20240819-033351:~$ pwd
+     /home/vinod
       
-    pwd | rev | cut -d "/" -f 1 | rev
-    vinod
-    ```
+     pwd | rev | cut -d "/" -f 1 | rev
+     vinod
+     ```
 ### Summary of Special Variables
 
 | Variable  | Meaning                                                    |
