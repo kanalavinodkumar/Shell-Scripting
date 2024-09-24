@@ -277,11 +277,11 @@ These commands form the foundation of shell scripting and can be combined in var
 
 ##The command you've provided is used to extract the name of the current working directory from its full path. 
       
-      ```bash
+   ```bash
       
-      vinod@jenkins-20240819-033351:~$ pwd
-      /home/vinod
+   vinod@jenkins-20240819-033351:~$ pwd
+   /home/vinod
       
-      pwd | rev | cut -d "/" -f 1 | rev
-      vinod
-     ```
+   pwd | rev | cut -d "/" -f 1 | rev
+   vinod
+   ```
