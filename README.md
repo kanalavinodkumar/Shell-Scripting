@@ -249,7 +249,20 @@ Shell scripting involves using various commands to automate tasks, manipulate fi
      ```bash
      exit 0  # Successful exit
      exit 1  # Indicate an error
+
+
      ```
+### Summary of Special Variables
+   - Variable	Meaning
+     $#	Number of arguments passed to the script
+     $?	Exit status of the last executed command
+     $@	All arguments passed to the script as separate strings
+     $*	All arguments passed to the script as a single string
+     $0	Name of the script
+     $1, $2, ...	Positional parameters (arguments)
+     $$	PID of the script
+     $!	PID of the last background command
+
 ### To execute shell script in debug mode use -x in first line like below 
 
 #!/bin/sh -x 
